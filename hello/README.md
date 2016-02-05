@@ -4,18 +4,19 @@ Setup
 
 Test Environment: Debian 8(jessie) amd64
  
- $ sudo aptitude install linux-headers-3.16.0-4-amd64
+    $ sudo aptitude install linux-headers-3.16.0-4-amd64
 
 Build
 -----
  
- $ cd hello
- $ make
+    $ cd hello
+    $ make
 
 Load driver
 -----------
 
     $ sudo insmod ./hello.ko 
+
     $ lsmod | head
     Module                  Size  Used by
     hello                  12458  0 
@@ -37,13 +38,14 @@ Load driver
     [ 6618.298826] e1000: eth0 NIC Link is Down
     [ 6620.301640] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
     [10196.947582] driver loaded
-    [10196.947592] Hello world
+    [10196.947592] **Hello world**
 
 
 Unload driver
 -------------
 
     $ sudo rmmod hello
+
     $ dmesg | tail
     [  269.159552] ISO 9660 Extensions: RRIP_1991A
     [  273.402670] traps: tracker-extract[1457] trap int3 ip:7f4432763d30 sp:7ffef1b96670 error:0
