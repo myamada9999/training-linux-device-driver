@@ -28,6 +28,7 @@ Load driver
     ipt_MASQUERADE         12594  1 
     iptable_nat            12646  1 
     nf_conntrack_ipv4      18448  2 
+    
     $ dmesg | tail
     [  268.817129] ISO 9660 Extensions: Microsoft Joliet Level 3
     [  269.159552] ISO 9660 Extensions: RRIP_1991A
@@ -38,7 +39,7 @@ Load driver
     [ 6618.298826] e1000: eth0 NIC Link is Down
     [ 6620.301640] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
     [10196.947582] driver loaded
-    [10196.947592] **Hello world**
+    [10196.947592] Hello world
 
 
 Unload driver
